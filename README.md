@@ -72,7 +72,8 @@ if ack:
     c.close()
 ```
 ### Server
-```python
+```
+python
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -81,7 +82,8 @@ print(s.recv(1024).decode())
 s.send("acknowledgement recived from the server".encode())
 ```
 
-##OUTPUT:
+
+## OUTPUT:
 ![Screenshot 2024-10-24 114211](https://github.com/user-attachments/assets/6e2d6e3b-05bc-4e54-b1c5-77a3cef4f479)
 
 
